@@ -3,6 +3,9 @@ import axios from 'axios';
 import DataTable from './DataTable';
 import AnimatedCharts from './AnimatedCharts';
 
+// Add this line to get the API URL from environment variables
+const API_URL = process.env.REACT_APP_API_URL || 'http://localhost:5000';
+
 export default function FileUpload() {
   const [file, setFile] = useState(null);
   const [loading, setLoading] = useState(false);
@@ -265,13 +268,13 @@ export default function FileUpload() {
 
     try {
       const { data } = await axios.post(
-        'http://localhost:5000/upload',
+        `${API_URL}/upload`,
         fd,
         { headers: { 'Content-Type': 'multipart/form-data' } }
       );
 
       setResults({
-        plots: data.plots.map(u => `http://localhost:5000${u}?t=${Date.now()}`),
+        plots: data.plots.map(u => `${API_URL}${u}?t=${Date.now()}`),
         cleanedDf: data.cleaned_df,
         plotData: data.plot_data
       });
