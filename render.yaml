@@ -1,0 +1,10 @@
+services:
+  - type: web
+    name: network-traffic-analysis-frontend
+    runtime: static
+    buildCommand: npm install && npm run build
+    staticPublishPath: ./build
+    envVars:
+      - key: REACT_APP_API_URL
+        # This should be updated to match your backend URL after deployment
+        value: https://your-backend-name.onrender.com 
