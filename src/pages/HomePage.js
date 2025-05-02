@@ -157,7 +157,7 @@ export default function HomePage() {
             
             <div className="text-center md:text-left max-w-3xl">
               <h1 className="hero-title">
-              DDoS-<span className="text-gradient">EWS</span>
+              DDoS<span className="text-gradient">AlertX</span>
               </h1>
               <p className="hero-subtitle">
                 Early Warning Signal for DDoS Prevention in Network

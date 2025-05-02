@@ -20,7 +20,7 @@ export default function Navbar() {
               </svg>
             </div>
             <Link to="/" className="text-xl font-bold text-white cyber-text">
-              DDoS-<span className="text-gradient">EWS</span>
+              DDoS<span className="text-gradient">AlertX</span>
             </Link>
           </div>
           

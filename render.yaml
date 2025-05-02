@@ -7,4 +7,4 @@ services:
     envVars:
       - key: REACT_APP_API_URL
         # This should be updated to match your backend URL after deployment
-        value: https://your-backend-name.onrender.com 
+        value: https://ddosalertx-backend.onrender.com/
