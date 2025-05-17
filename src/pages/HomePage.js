@@ -170,7 +170,7 @@ export default function HomePage() {
                   Explore Options
                 </Link>
                 <a 
-                  href="https://github.com/yourusername/ews-ddosnet" 
+                  href="https://github.com/AbhilashBanda7/DDoS-DOC" 
                   target="_blank" 
                   rel="noopener noreferrer"
                   className="bg-gray-800/80 hover:bg-gray-700 text-gray-100 font-medium py-3 px-6 border border-gray-700 rounded-full transition-colors"
