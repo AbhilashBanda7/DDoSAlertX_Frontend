@@ -127,10 +127,10 @@ export default function AnimatedCharts({
     console.log(`Chart ${chartId}: Analysis running state changed to ${isAnalysisRunning}`);
     
     // Only restart if the animation was manually paused by the user
-    if (isAnalysisRunning && paused && timerRef.current === null) {
-      console.log(`Chart ${chartId}: Restarting animation that was manually paused`);
-      setPaused(false);
-    }
+    // if (isAnalysisRunning && paused && timerRef.current === null) {
+    //   console.log(`Chart ${chartId}: Restarting animation that was manually paused`);
+    //   setPaused(false);
+    // }
   }, [isAnalysisRunning, paused, chartId]);
 
   // Animation effect - resets when speed changes or pause state changes
